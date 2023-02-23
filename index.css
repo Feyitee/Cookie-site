@@ -166,3 +166,6 @@ input {
 .modal-img {
   width: 50%;
 }
+.reverse {
+  flex-direction: row-reverse;
+}

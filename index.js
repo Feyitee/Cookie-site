@@ -2,6 +2,8 @@ const modal = document.getElementById("modal");
 const modalCloseBtn = document.getElementById("modal-close-btn");
 const consentForm = document.getElementById("consent-form");
 const modalText = document.getElementById("modal-text");
+const modalChoiceBtns = document.getElementById("modal-choice-btns");
+const declineBtn = document.getElementById("decline-btn");
 
 setTimeout(function () {
   modal.style.display = "inline";
@@ -38,4 +40,7 @@ consentForm.addEventListener("submit", function (e) {
     `;
   }, 3000);
   modalCloseBtn.disabled = false;
+});
+declineBtn.addEventListener("mouseenter", function () {
+  modalChoiceBtns.classList.toggle("reverse");
 });
